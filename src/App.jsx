@@ -1,15 +1,18 @@
+import React from 'react';
+
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
+
 import './App.scss';
-import LinkList from './components/LinkList/LinkList';
+import './styles/global.scss';
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <p>Under construction...</p>
-        <LinkList>
-          <a href='#' onClick={e => e.preventDefault()}>I'm a Link!</a>
-        </LinkList>
-      </div>
+    <div className="App scroll-pages">
+      <Home />
+      <About />
+      <Projects />
     </div>
   );
 }

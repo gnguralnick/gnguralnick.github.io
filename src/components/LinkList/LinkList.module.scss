@@ -11,7 +11,7 @@
             }
 
             & svg {
-                right: .5rem;
+                left: .5rem;
             }
         }
 
@@ -20,13 +20,15 @@
             color: black;
             margin-top: 0;
             padding-top: 0;
+            position: relative;
+            left: 1rem;
         }
 
         & svg {
-            transition: right .5s;
+            transition: left .5s;
             position: relative;
             top: .45rem;
-            right: 1rem;
+            left: 0rem;
             display: inline;
         }
 
