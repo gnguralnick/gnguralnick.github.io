@@ -5,19 +5,48 @@
     justify-content: space-around;
     flex-direction: row;
 
-    h1 {
-        font-size: 10rem;
-        margin-bottom: 0;
+    .content {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        h1 {
+            font-size: 10rem;
+            margin: 0;
+        }
+
+        .links {
+            font-size: 3rem;
+            margin-left: 3rem;
+    
+            svg {
+                transform: scale(2);
+            }
+        }
+
+        .contact {
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+
+            img {
+                transition: filter .5s;
+                width: 50px;
+                filter: saturate(0%) brightness(70%) contrast(1000%);
+                margin-right: 1rem;
+    
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+
     }
 
-
-
-    .links {
-        font-size: 3rem;
-        margin-left: 3rem;
-
-        svg {
-            transform: scale(2);
-        }
+    .profile {
+        width: 50%;
+        margin: auto;
     }
 }

@@ -2,24 +2,31 @@ import React from 'react';
 
 import LinkList from '../../components/LinkList/LinkList';
 import RelativeLink from '../../components/RelativeLink/RelativeLink';
-import profile from '../../images/profile.jpeg';
+
+import images from '../../images/images';
 
 import Styles from './Home.module.scss';
 
 const Home = () => {
 
     return <section className={'scroll-page ' + Styles['home']} id='home'>
-        <div>
+        <div className={Styles['content']}>
             <h1>Gabriel Guralnick</h1>
             <LinkList className={Styles['links']}>
                 <RelativeLink targetID='about'>about me</RelativeLink>
                 <RelativeLink targetID='projects'>my projects</RelativeLink>
             </LinkList>
+            <div className={Styles['contact']}>
+                <a href='https://github.com/gnguralnick'><img src={images.github} alt='Find me on Github' /></a>
+                <a href='https://www.linkedin.com/in/gabriel-guralnick/'><img src={images.linkedin} alt='Connect on LinkedIn' /></a>
+                <a href='mailto:gnguralnick@gmail.com'><img src={images.email} alt='Send me an email' /></a>
+                <a href='https://www.facebook.com/gabriel.guralnick'><img src={images.facebook} alt='Find me on Facebook' /></a>
+            </div>
         </div>
-        <img src={profile} alt='A picture of me' />
-        <div className={Styles['contact']}>
+        <div className={Styles['profile']}>
+            <img src={images.profile} alt='A picture of me' />
+        </div>
 
-        </div>
     </section>
 }
 
