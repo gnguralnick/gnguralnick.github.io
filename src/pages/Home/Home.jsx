@@ -13,10 +13,12 @@ const Home = () => {
         <div className={Styles['content']}>
             <h1>Gabriel Guralnick</h1>
             <h2>Software Developer</h2>
-            <LinkList className={Styles['links']}>
-                <RelativeLink targetID='about'>about me</RelativeLink>
-                <RelativeLink targetID='projects'>my projects</RelativeLink>
-            </LinkList>
+            <div className={Styles['links']}>
+                <LinkList>
+                    <RelativeLink targetID='about'>about me</RelativeLink>
+                    <RelativeLink targetID='projects'>my projects</RelativeLink>
+                </LinkList>
+            </div>
             <div className={Styles['contact']}>
                 <a href='https://github.com/gnguralnick'><img src={images.github} alt='Find me on Github' /></a>
                 <a href='https://www.linkedin.com/in/gabriel-guralnick/'><img src={images.linkedin} alt='Connect on LinkedIn' /></a>

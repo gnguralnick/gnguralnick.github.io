@@ -1,6 +1,7 @@
 html, body {
     overflow: hidden;
     height: 100vh;
+    font-size: 16px;
 }
 
 .scroll-pages {
@@ -15,7 +16,7 @@ html, body {
         scroll-snap-align: start;
     }
 
-    @media screen and (max-width: 1330px) {
+    @media screen and (max-width: 1000px) {
         .scroll-page {
             height: fit-content;
         }
