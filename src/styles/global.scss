@@ -15,5 +15,11 @@ html, body {
         scroll-snap-align: start;
     }
 
+    @media screen and (max-width: 1330px) {
+        .scroll-page {
+            height: fit-content;
+        }
+    }
+
 }
 

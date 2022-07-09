@@ -12,6 +12,7 @@ const Home = () => {
     return <section className={'scroll-page ' + Styles['home']} id='home'>
         <div className={Styles['content']}>
             <h1>Gabriel Guralnick</h1>
+            <h2>Software Developer</h2>
             <LinkList className={Styles['links']}>
                 <RelativeLink targetID='about'>about me</RelativeLink>
                 <RelativeLink targetID='projects'>my projects</RelativeLink>
