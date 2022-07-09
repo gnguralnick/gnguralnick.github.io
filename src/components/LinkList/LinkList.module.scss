@@ -1,6 +1,7 @@
 .linklist-container {
 
     & .linklist__link {
+        width: fit-content;
 
         &:hover {
 
@@ -22,6 +23,7 @@
             padding-top: 0;
             position: relative;
             left: 3rem;
+            width: min-content;
         }
 
         & svg {
