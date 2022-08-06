@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
 
 
 const About = () => {
 
-    return <div className='scroll-page'>
-        <p>Under construction...</p>
-    </div>
+    return <section className='scroll-page' id='about'>
+        <Header />
+    </section>
 }
 
 export default About;

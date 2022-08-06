@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
 
 
 const Projects = () => {
 
-    return <div className='scroll-page'>
-        <p>Under construction...</p>
-    </div>
+    return <section className='scroll-page' id='projects'>
+        <Header />
+    </section>
 }
 
 export default Projects;

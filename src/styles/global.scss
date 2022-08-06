@@ -26,9 +26,19 @@ html, body {
         height: unset;
 
         .scroll-page {
-            min-height: 100vh;
+            height: unset;
         }
     }
 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.25s;
+
+    &:hover {
+        color: grey;
+    }
 }
 

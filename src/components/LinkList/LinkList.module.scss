@@ -5,20 +5,12 @@
 
         &:hover {
 
-            & a {
-                text-decoration: none;
-                color: grey;
-
-            }
-
             & svg {
                 left: 1.5rem;
             }
         }
 
         & a {
-            text-decoration: none;
-            color: black;
             margin-top: 0;
             padding-top: 0;
             position: relative;
