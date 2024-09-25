@@ -124,8 +124,13 @@ import menus from "../collections/menu.json";
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const id = menu.id === 'intro-1' ? 'intro' : menu.id;
-      const elem = document.getElementById(id);
-      elem.scrollIntoView({ behavior: 'smooth' });
+      if (id === 'intro') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      } else {
+        const elem = document.getElementById(id);
+        elem.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   });
 </script>

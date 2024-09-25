@@ -1,5 +1,6 @@
 ---
 import Section from "../../layouts/section.astro";
+import Button from "../button.astro";
 const titles = [
   "Full-Stack Developer",
   "Machine Learning Researcher",
@@ -9,7 +10,7 @@ const titles = [
 
 <Section id="intro">
   <div class="flex flex-col items-center md:flex-row">
-    <div class="relative w-full md:w-1/2">
+    <div class="relative flex-1">
       <h1
         class="mb-2 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
       >
@@ -25,14 +26,16 @@ const titles = [
         }
       </div>
 
-      <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+      <p class="text-base text-neutral-600 dark:text-neutral-400">
         I'm passionate about using AI to better understand human cognition and
         improve the way we interact with technology.
       </p>
 
-      <span
-        class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"
-        >
+      <div class="flex flex-col items-center justify-center mb-5">
+        <Button link="/assets/Gabriel_Guralnick_Resume.pdf" text="Download my resume" target="_blank"/>
+      </div>
+
+      <div class="flex flex-row justify-center space-x-4">
         <a
             href="https://www.instagram.com/gabe.guralnick/"
             target="_blank"
@@ -88,7 +91,7 @@ const titles = [
                 clip-rule="evenodd"></path></svg
             >
         </a>
-        </span>
+        </div>
     </div>
     <div
       class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0"
