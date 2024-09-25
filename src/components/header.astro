@@ -123,7 +123,8 @@ import menus from "../collections/menu.json";
     const link = document.getElementById('link-' + menu.id);
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      document.getElementById(menu.id)?.scrollIntoView({ behavior: 'smooth' });
+      const elem = document.getElementById(menu.id);
+      elem.scrollIntoView({ behavior: 'smooth' });
     });
   });
 </script>
