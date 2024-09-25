@@ -32,7 +32,11 @@ In the official tutorial, different frameworks use [@vercel/analytics](https://v
 
 ```html
 <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  window.va =
+    window.va ||
+    function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
 </script>
 <script async src="/mt-demo/script.js" data-endpoint="/mt-demo"></script>
 ```

@@ -13,29 +13,28 @@ For more information on how AdBlock works, you can refer to [Resolving Vercel An
 
 ## Solution
 
-Create a Cloudflare Worker and paste the following JavaScript code. If you are using the official Umami service, you don't need to modify the code (remember to change UMAMI\_HOST to your service URL). If you are using a self-hosted service, you can define the script and data reporting URLs using the `TRACKER_SCRIPT_NAME` and `COLLECT_API_ENDPOINT` environment variables, without the need for proxying.
+Create a Cloudflare Worker and paste the following JavaScript code. If you are using the official Umami service, you don't need to modify the code (remember to change UMAMI_HOST to your service URL). If you are using a self-hosted service, you can define the script and data reporting URLs using the `TRACKER_SCRIPT_NAME` and `COLLECT_API_ENDPOINT` environment variables, without the need for proxying.
 
 ```js
-const UMAMI_HOST = 'https://eu.umami.is'
+const UMAMI_HOST = "https://eu.umami.is";
 
 export default {
   async fetch(request, env, ctx) {
-    const { pathname, search } = new URL(request.url)
-    if (pathname.endsWith('.js')) {
-      let response = await caches.default.match(request)
+    const { pathname, search } = new URL(request.url);
+    if (pathname.endsWith(".js")) {
+      let response = await caches.default.match(request);
       if (!response) {
-          response = await fetch(`${UMAMI_HOST}/script.js`, request)
-          ctx.waitUntil(caches.default.put(request, response.clone()))
+        response = await fetch(`${UMAMI_HOST}/script.js`, request);
+        ctx.waitUntil(caches.default.put(request, response.clone()));
       }
-      return response
+      return response;
     }
-    const req = new Request(request)
-    req.headers.delete("cookie")
-    req.headers.append('x-client-ip', req.headers.get('cf-connecting-ip'))
-    return fetch(`${UMAMI_HOST}${pathname}${search}`, req)
+    const req = new Request(request);
+    req.headers.delete("cookie");
+    req.headers.append("x-client-ip", req.headers.get("cf-connecting-ip"));
+    return fetch(`${UMAMI_HOST}${pathname}${search}`, req);
   },
 };
-
 ```
 
 Once you have created the Worker, configure the domain and test if the script URL can be accessed correctly. In my case, it is [https://ums.miantiao.me/mt-demo.js](https://ums.miantiao.me/mt-demo.js). You can replace "mt-demo" with any disguised URL, as the script has already been adapted.
@@ -43,8 +42,12 @@ Once you have created the Worker, configure the domain and test if the script UR
 Next, inject the script into your website project. You can refer to the official documentation at [https://umami.is/docs/tracker-configuration](https://umami.is/docs/tracker-configuration) or use the following code as a reference:
 
 ```html
-<script defer src="https://ums.miantiao.me/mt-demo.js" data-host-url="https://ums.miantiao.me" data-website-id="0a10de75-03be-4fec-a521-4c62b91650ac"></script>
-
+<script
+  defer
+  src="https://ums.miantiao.me/mt-demo.js"
+  data-host-url="https://ums.miantiao.me"
+  data-website-id="0a10de75-03be-4fec-a521-4c62b91650ac"
+></script>
 ```
 
 In the above code, `src` refers to the script URL, `data-host-url` refers to the data reporting URL, and `data-website-id` refers to the website ID. Make sure to provide the correct website ID to ensure data reporting.

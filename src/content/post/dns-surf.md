@@ -5,7 +5,6 @@ description: DNS.Surf - check DNS resolution results in different regions
 dateFormatted: Nov 8th, 2023
 ---
 
-
 [**DNS.Surf**](https://dns.surf/) is like a traveler that helps you explore the scenery of DNS resolution results in different regions.
 
 It provides resolution services from 18 regions and has over 100 optional DNS resolvers, just like choosing how to travel between different cities and countries.

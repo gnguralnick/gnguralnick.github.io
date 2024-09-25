@@ -24,15 +24,18 @@ Among the popular software, Mastodon has more features but consumes more resourc
 Therefore, I would like to share this solution:
 
 - Cloud platforms:
+
   1. [Koyeb](https://app.koyeb.com/)
   2. [Northflank](https://northflank.com/)
   3. [Zeabur](https://s.mt.ci/WrK7Dc) (Originally free, but now only available through subscription plans (free plan is for testing only))
 
 - Database:
+
   1. [Aiven](https://s.mt.ci/dgQGhM)
   2. [Neon](https://neon.tech/)
 
 - Cloud storage:
+
   1. [Cloudflare R2](https://www.cloudflare.com/zh-cn/developer-platform/r2/)
   2. [Backblaze B2](https://www.backblaze.com/)
 
