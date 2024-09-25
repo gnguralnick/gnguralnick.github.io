@@ -1,7 +1,6 @@
 ---
 import Intro from "../components/home/intro.astro";
 import Projects from "../components/home/projects.astro";
-import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
 import About from "../components/home/about.astro";
 import Layout from "../layouts/main.astro";
@@ -9,16 +8,13 @@ import Layout from "../layouts/main.astro";
 
 <Layout title="Gabriel Guralnick">
   <div>
-    <Intro />
-    <Separator text="About Me" />
+    <Intro nextText="About Me" nextId="about"/>
   </div>
   <div>
-    <About />
-    <Separator text="My Projects" />
+    <About nextText="My Projects" nextId="projects"/>
   </div>
   <div>
-    <Projects />
-    <Separator text="My writing" />
+    <Projects nextText="My Writing" nextId="writings"/>
   </div>
   <div>
     <Writings />

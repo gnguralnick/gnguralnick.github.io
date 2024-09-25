@@ -1,14 +1,15 @@
 ---
+import Section from "../../layouts/section.astro";
 const titles = [
   "Full-Stack Developer",
   "Machine Learning Researcher",
   "Cognitive Scientist",
 ];
+
+const { nextText, nextId } = Astro.props;
 ---
 
-<section
-  class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
->
+<Section id="intro" nextText={nextText} nextId={nextId}>
   <div class="flex flex-col items-center md:flex-row">
     <div class="relative w-full md:w-1/2">
       <h1
@@ -50,4 +51,4 @@ const titles = [
       </div>
     </div>
   </div>
-</section>
+</Section>
