@@ -1,16 +1,14 @@
 ---
-import experiences from "../collections/experiences.json";
-import AboutExperience from "../components/about-experience.astro";
-import PageHeading from "../components/page-heading.astro";
-import Layout from "../layouts/main.astro";
+import experiences from "../../collections/experiences.json";
+import AboutExperience from "../../components/about-experience.astro";
 ---
 
-<Layout title="About Me">
-  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
-    <PageHeading
-      title="About Me"
-      description="Hello 👋 I'm a frontend engineer from Nanjing, China. I'm passionate about building new products and learning new technology."
-    />
+<section class="max-w-4xl mx-auto px-7 lg:px-0 h-100vh">
+    <h2
+    class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
+  >
+    About Me
+  </h2>
 
     <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
 
@@ -68,5 +66,4 @@ import Layout from "../layouts/main.astro";
         >email</a
       > and I'll be sure to get back to you.
     </p>
-  </section>
-</Layout>
+</section>
