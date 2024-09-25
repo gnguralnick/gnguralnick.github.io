@@ -1,20 +1,20 @@
 [
   {
-    "name": "Email.ML",
-    "description": "Minimalist temporary Email.",
-    "image": "/assets/images/projects/email.ml.png",
-    "url": "https://email.ml"
+    "name": "Social Learning in Multi-Agent Systems",
+    "description": "Collaborated with a professor and several peers to apply insights from research on social networks to multi-agent reinforcement learning.",
+    "image": "/assets/images/projects/cleanup-env.png",
+    "url": "https://github.com/gnguralnick/social_reinforcement_learning"
   },
   {
-    "name": "DNS.Surf",
-    "description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-    "image": "/assets/images/projects/dns.surf.png",
-    "url": "https://dns.surf"
+    "name": "Content Market Model of Social Media Networks",
+    "description": "Implemented and simulated model of social media networks as a content market to evaluate theoretical accuracy.",
+    "image": "/assets/images/projects/graph-social-network.jpeg",
+    "url": "https://github.com/gnguralnick/content-market-experiment"
   },
   {
-    "name": "HTML.ZONE",
-    "description": "Web Toolbox.",
-    "image": "/assets/images/projects/html.zone.png",
-    "url": "https://html.zone"
+    "name": "Fine-Tuning Stable Diffusion",
+    "description": "Evaluated the efficacy of LoRA, Textual Inversion, and Dreambooth for introducing new concepts to diffusion image generators",
+    "image": "/assets/images/projects/stable-diffusion.png",
+    "url": "https://github.com/gnguralnick/stable-diffusion-fine-tuning"
   }
 ]
