@@ -4,13 +4,13 @@ import menus from "../collections/menu.json";
 
 <!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
 <div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
-<header id="header" class="absolute top-0 z-50 w-full h-20">
+<header id="header" class="absolute top-0 z-[100] w-full h-20">
   <div
     class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
   >
     <a
       href="#"
-      id="link-intro"
+      id="link-intro-1"
       class="text-base group relative flex w-max items-center text-black dark:text-white font-semibold hover:text-gray-600 dark:hover:text-gray-400"
     >
       Gabriel Guralnick
@@ -119,11 +119,12 @@ import menus from "../collections/menu.json";
 </header>
 
 <script define:vars={{menus}}>
-  [...menus, {id: 'intro'}].forEach((menu) => {
+  [...menus, {id: 'intro-1'}].forEach((menu) => {
     const link = document.getElementById('link-' + menu.id);
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      const elem = document.getElementById(menu.id);
+      const id = menu.id === 'intro-1' ? 'intro' : menu.id;
+      const elem = document.getElementById(id);
       elem.scrollIntoView({ behavior: 'smooth' });
     });
   });

@@ -3,14 +3,8 @@ const { title, id } = Astro.props;
 
 
 ---
-<script is:inline define:vars={{id}}>
-    const sectionCtr = document.getElementById(id);
 
-    const section = sectionCtr.querySelector(".main-section");
-    //section.style.height = `calc(100vh - ${headerHeight}px)`;
-</script>
-
-<section class="main-section max-w-4xl mx-auto px-7 pb-5 lg:px-0 flex flex-col justify-center flex-1 pt-10 border-dashed border-0 border-b-2 last:border-b-0 last:pb-0" id={id}>
+<section class="main-section max-w-4xl mx-auto px-7 pb-5 lg:px-0 flex flex-col justify-center flex-1 pt-10 border-dashed border-0 border-b-2 last-of-type:border-b-0 last-of-type:pb-0" id={id}>
     <div>
         {title && <h2
             class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
@@ -21,4 +15,11 @@ const { title, id } = Astro.props;
     </div>
 </section>
 
+<script is:inline define:vars={{id}}>
+    const header = document.getElementById("header");
+    const sec = document.getElementById(id);
+    if (sec) {
+        sec.style.minHeight = `calc(100vh - ${header?.clientHeight}px)`;
+    }
+</script>
 

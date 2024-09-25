@@ -1,11 +1,9 @@
 ---
 import Section from "../../layouts/section.astro";
 import PostsLoop from "../posts-loop.astro";
-
-const { nextText, nextId } = Astro.props;
 ---
 
-<Section title="My Writings" id="writings" nextText={nextText} nextId={nextId}>
+<Section title="My Writings" id="writings">
   <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
     Along with coding I also like to write about life and technology. Here are
     some of my recent posts.

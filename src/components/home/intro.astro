@@ -5,11 +5,9 @@ const titles = [
   "Machine Learning Researcher",
   "Cognitive Scientist",
 ];
-
-const { nextText, nextId } = Astro.props;
 ---
 
-<Section id="intro" nextText={nextText} nextId={nextId}>
+<Section id="intro">
   <div class="flex flex-col items-center md:flex-row">
     <div class="relative w-full md:w-1/2">
       <h1
@@ -28,8 +26,8 @@ const { nextText, nextId } = Astro.props;
       </div>
 
       <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-        I'm passionate about exploring interesting uses of AI to improve the way
-        we interact with technology and better understand human cognition.
+        I'm passionate about using AI to better understand human cognition and
+        improve the way we interact with technology.
       </p>
 
       <span
@@ -112,11 +110,3 @@ const { nextText, nextId } = Astro.props;
     </div>
   </div>
 </Section>
-
-<script>
-    const header = document.getElementById("header");
-    const sec = document.getElementById("intro");
-    if (sec) {
-        sec.style.height = `calc(100vh - ${header?.clientHeight}px)`;
-    }
-</script>

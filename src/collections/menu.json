@@ -1,14 +1,14 @@
 [
   {
+    "name": "Home",
+    "id": "intro"
+  },
+  {
     "name": "About",
     "id": "about"
   },
   {
     "name": "Projects",
     "id": "projects"
-  },
-  {
-    "name": "Posts",
-    "id": "writings"
   }
 ]

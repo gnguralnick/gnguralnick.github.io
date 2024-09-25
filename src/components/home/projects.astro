@@ -2,11 +2,9 @@
 import projects from "../../collections/projects.json";
 import Project from "../project.astro";
 import Section from "../../layouts/section.astro";
-
-const { nextText, nextId } = Astro.props;
 ---
 
-<Section title="My Projects" id="projects" nextText={nextText} nextId={nextId}>
+<Section title="My Projects" id="projects">
   <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
     Here are some of my recent projects. I'm always working on something new, so
     check back often!
