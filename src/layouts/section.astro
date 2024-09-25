@@ -5,12 +5,34 @@ const { title, id, nextText, nextId } = Astro.props;
 
 ---
 
-<section class="max-w-4xl mx-auto px-7 lg:px-0 mt-16" id={id}>
-    {title && <h2
-      class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
-    >
-        {title}
-    </h2>}
-    <slot />
+<div class="relative flex" id={id}>
+    <section class="main-section max-w-4xl mx-auto px-7 lg:px-0 overflow-scroll flex flex-col justify-center flex-1">
+        <div>
+            {title && <h2
+                class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
+              >
+                  {title}
+              </h2>}
+              <slot />
+        </div>
+    </section>
     {nextText && <Separator text={nextText} id={nextId} />}
-</section>
+</div>
+
+
+<script is:inline define:vars={{id}}>
+    headerElement = document.getElementById("header");
+    const headerHeight = headerElement?.clientHeight;
+
+    const sectionCtr = document.getElementById(id);
+    sectionCtr.style.height = `calc(100vh - ${headerHeight}px)`;
+
+    const section = sectionCtr.querySelector(".main-section");
+    section.addEventListener("scroll", () => {
+        // if we've scrolled to the bottom of the section, scroll to the next section
+        console.log('hi');
+        if (section.scrollHeight - section.scrollTop === section.clientHeight) {
+            document.getElementById(nextId)?.scrollIntoView({ behavior: "smooth" });
+        }
+    })
+</script>

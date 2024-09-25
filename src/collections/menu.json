@@ -1,14 +1,14 @@
 [
   {
     "name": "About",
-    "url": "#about"
+    "id": "about"
   },
   {
     "name": "Projects",
-    "url": "#projects"
+    "id": "projects"
   },
   {
     "name": "Posts",
-    "url": "#posts"
+    "id": "writings"
   }
 ]

@@ -1,6 +1,5 @@
 ---
 import menus from "../collections/menu.json";
-import Logo from "../components/logo.astro";
 ---
 
 <!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
@@ -9,7 +8,14 @@ import Logo from "../components/logo.astro";
   <div
     class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
   >
-    <Logo />
+    <a
+      href="#"
+      id="link-intro"
+      class="text-base group relative flex w-max items-center text-black dark:text-white font-semibold hover:text-gray-600 dark:hover:text-gray-400"
+    >
+      Gabriel Guralnick
+    </a>
+
     <div
       id="mobileMenuBackground"
       onclick="closeMobileMenu()"
@@ -63,7 +69,8 @@ import Logo from "../components/logo.astro";
           menus.map((menu) => {
             return (
               <a
-                href={menu.url}
+                href={'#' + menu.id}
+                id={'link-' + menu.id}
                 class="relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-400 dark:hover:text-neutral-400"
               >
                 {menu.name}
@@ -110,3 +117,13 @@ import Logo from "../components/logo.astro";
     </nav>
   </div>
 </header>
+
+<script define:vars={{menus}}>
+  [...menus, {id: 'intro'}].forEach((menu) => {
+    const link = document.getElementById('link-' + menu.id);
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById(menu.id)?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
