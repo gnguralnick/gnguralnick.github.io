@@ -1,5 +1,11 @@
 [
   {
+    "name": "LLM Playground",
+    "description": "Implemented full-stack application using React and FastAPI to interact with large language models",
+    "image": "/assets/images/projects/llm-playground.png",
+    "url": "https://github.com/gnguralnick/llm-playground"
+  },
+  {
     "name": "Social Learning in Multi-Agent Systems",
     "description": "Collaborated with a professor and several peers to apply insights from research on social networks to multi-agent reinforcement learning.",
     "image": "/assets/images/projects/cleanup-env.png",
@@ -16,5 +22,23 @@
     "description": "Evaluated the efficacy of LoRA, Textual Inversion, and Dreambooth for introducing new concepts to diffusion image generators",
     "image": "/assets/images/projects/stable-diffusion.png",
     "url": "https://github.com/gnguralnick/stable-diffusion-fine-tuning"
+  },
+  {
+    "name": "GRIMM AutoFinance",
+    "description": "Created and deployed a web application to help car buyers save time in the dealership",
+    "image": "/assets/images/projects/grimm-autofinance.png",
+    "url": "https://github.com/grimm-auto-finance"
+  },
+  {
+    "name": "Wikipedia 6 Degrees of Separation",
+    "description": "Represented Wikipedia article categories using a graph to model connections and implemented the PageRank algorithm to judge article importance and relevance.",
+    "image": "/assets/images/projects/wikipedia.png",
+    "url": "https://github.com/mtoohey31/csc111-graph-project"
+  },
+  {
+    "name": "Climate Change Snowfall Effects",
+    "description": "Modeled the relationship between the Global Land-Ocean Temperature Index and US Snowfall by region using Pandas and Plotly.",
+    "image": "/assets/images/projects/snowfall.gif",
+    "url": "https://github.com/mtoohey31/csc110-climate-change-project"
   }
 ]

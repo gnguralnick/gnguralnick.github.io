@@ -3,21 +3,21 @@
     "dates": "September - December 2023",
     "role": "Teaching Assistant: Software Design",
     "company": "University of Toronto",
-    "description": "Aided professors in teaching students useful principles for the creation of full-stack software projects.",
+    "description": "I worked as a teaching assistant for the software design class. In addition to helping the professors grade assignments and manage the class, I mentored groups of second-year students as they developed their term projects. I helped students define goals, brainstorm ideas, and implement their solutions to complex problems in the creditors' insurance industry. I guided them throughout the semester as they built full-stack web applications to aid creditors, advising them on frameworks to use for development as well as providers for cloud hosting. Throughout this process, I made sure the projects adhered to modern software design best practices.",
     "logo": "/assets/images/experiences/uoft.svg"
   },
   {
     "dates": "May - August 2023",
     "role": "Associate Software Developer, Intern",
     "company": "Konrad Group",
-    "description": "Led the evaluation of AI technologies in the enterprise space through research into large language models and the development of several proof-of-concept projects.",
+    "description": "For my second summer at Konrad, I supported the company's entry into the enterprise AI space by working on a variety of proof-of-concept research projects involving multimodal machine learning pipelines and large language models. The most impressive of these was an application for automatically generating Agile-style tickets from a website screenshot that incorporated image segmentation and captioning models and an LLM. I worked extensively both with LLM APIs and self-hosted and fine-tuned models. This experience greatly improved my familiarity with all areas of applied machine learning including building, testing, and fine-tuning models and incorporating them into enterprise applications.For my second summer at Konrad, I supported the company's entry into the enterprise AI space by working on a variety of proof-of-concept research projects involving multimodal machine learning pipelines and large language models. The most impressive of these was an application for automatically generating Agile-style tickets from a website screenshot that incorporated image segmentation and captioning models and an LLM. I worked extensively both with LLM APIs and self-hosted and fine-tuned models. This experience greatly improved my familiarity with all areas of applied machine learning including building, testing, and fine-tuning models and incorporating them into enterprise applications.",
     "logo": "/assets/images/experiences/konrad.png"
   },
   {
     "dates":"May - August 2022",
     "role":"Associate Software Developer, Intern",
     "company":"Konrad Group",
-    "description": "Implemented new services and completed full-stack redesigns of existing services using GraphQL and React with MySQL and AWS integration.",
+    "description": "At Konrad, I worked on a large, microservices-based project, maintaining and improving both the frontend and backend components. I helped implement new UI components and full-page redesigns as part of a new UI library. I also led development of an entirely new secure file upload service which involved updating the existing database and backend and adding integration with AWS S3 and Cron to support the new functionality. I gained meaningful experience working in the industry and further ignited my passion for software development.",
     "logo": "/assets/images/experiences/konrad.png"
   }
 ]
