@@ -1,5 +1,12 @@
 [
   {
+    "dates": "November 2024 - Present",
+    "role": "Research Software Engineer",
+    "company": "Abacus.AI",
+    "description": "At Abacus.AI, I've worked on LLM benchmarking and agent evaluations. One of my primary focuses has been the maintenance of LiveBench, a popular general-purpose LLM benchmark that evaluates models on reasoning, mathematics, language, coding, and data analysis capabilities. I've been the primary maintainer of the benchmark, evaluating all new models as they are released and developing new tasks and refreshing existing ones to prevent contamination and score saturation as model capabilities evolve. I also developed LiveSWEBench, a novel benchmark for AI coding assistants, which evaluated models based on their performance when working on their own or in collaboration with a human developer to solve real-world coding tasks. Most recently, I've helped design and develop an evaluation suite for Abacus's DeepAgent product, a generalist agent with full computer access. This has involved creating judging systems with LLM integration to evaluate a variety of outputs, including research reports, presentations, websites, videos, and spreadsheets. Artifacts are evaluated both holistically and based on specific criteria such as factual accuracy; to support this, I've developed complex agentic evaluation pipelines to provide appropriate context to the LLM judges for a comprehensive evaluation.",
+    "logo": "/assets/images/experiences/abacus.png"
+  },
+  {
     "dates": "September - December 2023",
     "role": "Teaching Assistant: Software Design",
     "company": "University of Toronto",
@@ -17,7 +24,7 @@
     "dates":"May - August 2022",
     "role":"Associate Software Developer, Intern",
     "company":"Konrad Group",
-    "description": "At Konrad, I worked on a large, microservices-based project, maintaining and improving both the frontend and backend components. I helped implement new UI components and full-page redesigns as part of a new UI library. I also led development of an entirely new secure file upload service which involved updating the existing database and backend and adding integration with AWS S3 and Cron to support the new functionality. I gained meaningful experience working in the industry and further ignited my passion for software development.",
+    "description": "At Konrad, I contributed to the maintenance and development of KGPortal, the primary internal web application used by Konrad employees to manage projects and other internal tasks. I helped maintain and improve both the frontend and backend components, implementing new UI components and full-page redesigns as part of a new UI library. I also led development of an entirely new secure file upload service which involved updating the existing database and backend and adding integration with AWS S3 and Cron to support the new functionality. I gained meaningful experience working in the industry and further ignited my passion for software development.",
     "logo": "/assets/images/experiences/konrad.png"
   }
 ]
