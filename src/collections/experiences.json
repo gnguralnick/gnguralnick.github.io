@@ -1,30 +1,37 @@
 [
   {
-    "dates": "November 2024 - Present",
+    "dates": "January 2026 - Present",
+    "role": "Member of Technical Staff",
+    "company": "Imbue",
+    "logo": "/assets/images/experiences/imbue.jpg",
+    "description": ""
+  },
+  {
+    "dates": "November 2024 - December 2025",
     "role": "Research Software Engineer",
     "company": "Abacus.AI",
-    "description": "At Abacus.AI, I've worked on LLM benchmarking and agent evaluations. One of my primary focuses has been the maintenance of LiveBench, a popular general-purpose LLM benchmark that evaluates models on reasoning, mathematics, language, coding, and data analysis capabilities. I've been the primary maintainer of the benchmark, evaluating all new models as they are released and developing new tasks and refreshing existing ones to prevent contamination and score saturation as model capabilities evolve. I also developed LiveSWEBench, a novel benchmark for AI coding assistants, which evaluated models based on their performance when working on their own or in collaboration with a human developer to solve real-world coding tasks. Most recently, I've helped design and develop an evaluation suite for Abacus's DeepAgent product, a generalist agent with full computer access. This has involved creating judging systems with LLM integration to evaluate a variety of outputs, including research reports, presentations, websites, videos, and spreadsheets. Artifacts are evaluated both holistically and based on specific criteria such as factual accuracy; to support this, I've developed complex agentic evaluation pipelines to provide appropriate context to the LLM judges for a comprehensive evaluation.",
+    "description": "I worked on LLM benchmarking and agent evaluations. I was the primary maintainer of LiveBench, a popular general-purpose LLM benchmark that evaluates models on reasoning, mathematics, language, coding, and data analysis capabilities. I also developed LiveSWEBench, a novel benchmark for AI coding assistants, which evaluated models based on their performance when working on their own or in collaboration with a human developer to solve real-world coding tasks. Most recently, I helped design and develop an evaluation suite for DeepAgent, a generalist agent with full computer access. This involved creating complex LLM-as-a-judge systems to evaluate the quality of variety of outputs like research reports or websites.",
     "logo": "/assets/images/experiences/abacus.png"
   },
   {
     "dates": "September - December 2023",
     "role": "Teaching Assistant: Software Design",
     "company": "University of Toronto",
-    "description": "I worked as a teaching assistant for the software design class. In addition to helping the professors grade assignments and manage the class, I mentored groups of second-year students as they developed their term projects. I helped students define goals, brainstorm ideas, and implement their solutions to complex problems in the creditors' insurance industry. I guided them throughout the semester as they built full-stack web applications to aid creditors, advising them on frameworks to use for development as well as providers for cloud hosting. Throughout this process, I made sure the projects adhered to modern software design best practices.",
+    "description": "I worked as a teaching assistant for the software design class. I mentored groups of second-year students as they developed their term projects. I helped students define goals, brainstorm ideas, and implement their solutions to complex problems in the creditors' insurance industry.",
     "logo": "/assets/images/experiences/uoft.svg"
   },
   {
     "dates": "May - August 2023",
     "role": "Associate Software Developer, Intern",
     "company": "Konrad Group",
-    "description": "For my second summer at Konrad, I supported the company's entry into the enterprise AI space by working on a variety of proof-of-concept research projects involving multimodal machine learning pipelines and large language models. The most impressive of these was an application for automatically generating Agile-style tickets from a website screenshot that incorporated image segmentation and captioning models and an LLM. I worked extensively both with LLM APIs and self-hosted and fine-tuned models. This experience greatly improved my familiarity with all areas of applied machine learning including building, testing, and fine-tuning models and incorporating them into enterprise applications.",
+    "description": "I worked on a variety of proof-of-concept research projects involving multimodal machine learning pipelines and large language models. The most impressive of these was an application for automatically generating Agile-style tickets from a website screenshot that incorporated image segmentation and captioning models and an LLM. I worked extensively both with LLM APIs and self-hosted and fine-tuned models.",
     "logo": "/assets/images/experiences/konrad.png"
   },
   {
     "dates":"May - August 2022",
     "role":"Associate Software Developer, Intern",
     "company":"Konrad Group",
-    "description": "At Konrad, I contributed to the maintenance and development of KGPortal, the primary internal web application used by Konrad employees to manage projects and other internal tasks. I helped maintain and improve both the frontend and backend components, implementing new UI components and full-page redesigns as part of a new UI library. I also led development of an entirely new secure file upload service which involved updating the existing database and backend and adding integration with AWS S3 and Cron to support the new functionality. I gained meaningful experience working in the industry and further ignited my passion for software development.",
+    "description": "I contributed to the maintenance and development of KGPortal, the primary internal web application used by Konrad employees to manage projects and other internal tasks. I helped maintain and improve both the frontend and backend components, implementing new UI components and full-page redesigns as part of a new UI library. I also led development of an entirely new secure file upload service which involved updating the existing database and backend and adding integration with AWS S3 and Cron to support the new functionality.",
     "logo": "/assets/images/experiences/konrad.png"
   }
 ]

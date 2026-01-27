@@ -1,11 +1,6 @@
 ---
 import Section from "../../layouts/section.astro";
 import Button from "../button.astro";
-const titles = [
-  "Full-Stack Software Engineer",
-  "Machine Learning Researcher",
-  "Cognitive Scientist",
-];
 ---
 
 <Section id="intro">
@@ -16,15 +11,6 @@ const titles = [
       >
         Gabriel Guralnick
       </h1>
-      <div class="mb-6">
-        {
-          titles.map((t) => (
-            <h2 class="mb-0 text-2xl font-light text-zinc-800 dark:text-zinc-200">
-              {t}
-            </h2>
-          ))
-        }
-      </div>
 
       <p class="text-base text-neutral-600 dark:text-neutral-400">
         My goal is to use AI to better understand human cognition and
@@ -102,7 +88,7 @@ const titles = [
             src="/assets/images/photo.png"
             loading="eager"
             decoding="auto"
-            class="relative z-30 w-full aspect-auto md:max-w-md mx-auto dark:-translate-y-0.5"
+            class="relative z-30 w-full aspect-auto sm:max-w-sm mx-auto dark:-translate-y-0.5"
           />
         </div>
         <div
